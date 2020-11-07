@@ -43,7 +43,7 @@ obfs_update(){
 	cat "$back_up_config" ~/.tormux/tormuxconfig ~/.tormux/obfs > "$tor_config"
 
 	printf "Run 'tor &' and check if you can connect to tor network\n"
-
+}
 
 [[ "$1" == "install" ]] && install_tor && obfs_update
 
