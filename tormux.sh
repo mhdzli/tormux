@@ -24,7 +24,7 @@ install_tor(){
 
 	printf "Getting storage access for termux\n"
 	sleep 3
-	Termux-setup-storage
+	termux-setup-storage
 
 	printf "Config tor and add obfs bridges\n"
 
