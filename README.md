@@ -1,2 +1,2 @@
 # tormux
-tor in trrmux
+tor in termux
