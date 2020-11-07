@@ -3,7 +3,7 @@ Tor in termux:
 
 Install termux from [playstore](https://play.google.com/store/apps/details?id=com.termux) or [fdroid](https://f-droid.org/repo/com.termux).
 
-Run
+Run these commands in termux:
 ```bash
 $ curl -LO https://raw.githubusercontent.com/mhdzli/tormux/main/tormux.sh
 $ bash tormux.sh install
