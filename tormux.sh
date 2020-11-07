@@ -3,14 +3,14 @@
 install_tor(){
 	printf "updating apt data\n"
 	sleep 3
-	apt update
+	apt update -y
 	
 	printf "upgrading aplications\n"
 	sleep 3
-	apt upgrade
+	apt upgrade -y
 	
 	printf "installing tor, privoxy and obfs4socks\n"
-	apt install tor privoxy obfs4proxy
+	apt install -y tor privoxy obfs4proxy
 	[[ ! $(apt list tor | grep tor) ]] && printf " there is something wrong, tor is not installed\n" && exit 1 || printf "tor is installed\n" 
 	[[ ! $(apt list obfs4proxy | grep obfs4proxy) ]] && printf " there is something wrong, obfs4proxy is not installed\n" && exit 1 || printf "obfs4proxy is installed\n" 
 	[[ ! $(apt list privoxy | grep privoxy) ]] && printf " there is something wrong, privoxy is not installed\n" && exit 1 || printf "privoxy is installed\n"
