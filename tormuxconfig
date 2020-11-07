@@ -1,0 +1,10 @@
+DataDirectory /data/data/com.termux/files/usr/var/lib/tor
+
+HTTPTunnelPort 8118
+SocksPort 9050
+DNSPort 5353
+TransPort 9040
+
+UseBridges 1
+ClientTransportPlugin obfs4 exec /data/data/com.termux/files/usr/bin/obfs4proxy
+
